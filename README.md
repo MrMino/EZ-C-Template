@@ -10,6 +10,11 @@ All `.c` files from `src/` are compiled, then linked together into a.out.
  - Use `make debug` to compile a binary with debug symbols (e.g. for `gdb`).
  - Use `make clean` to clean all of the files.
 
+#### Flags
+Targets use the following flags
+ - `all`: `-Wall -Wextra -Wpedantic -s`
+ - `debug`: `-Wall -Wextra -Wpedantic -g -DDEBUG`
+
 ## .clang-format
 This template contains a clang-format configuration for version 8.0.
 
